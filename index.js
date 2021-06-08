@@ -24,7 +24,7 @@ Do the following:
 Task 1b - Values
 
 Do the following:   
-   1. Declare two variables and assign them values
+   1. Declare two variablenpms and assign them values
    2. Use a conditional to change the value of the 1st variable based on the value assigned to the 2nd variable
    3. Console log the new value of the 1st variable
 
@@ -107,8 +107,22 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
+function hungryDog(weight, age){
+    if(age >= 1 && weight <= 5){
+      return weight * 0.05;
+    }else if(age >= 1 && weight >= 6 && <= 10){
+      return weight * 0.04;
+    }else if(age >= 1 && weight >= 11 && weight <= 15){
+      return weight * 0.03;
+    }else if(age >= 1 && weight >15){
+      return weight * 0.02;
+    }else if(age >= 0.583 && age >= 0.333){
+      return weight * 0.05;
+    }else if(age >= 0.333){
+      return weight * 0.10;
+      else{
+        return 'please try again;';
+    }
   }
 
 
